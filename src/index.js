@@ -56,13 +56,48 @@ module.exports = function toReadable (number) {
 
         }
         if (number === 11) {
-            str+=" eleven "
-            number-=10;
+            str+=" eleven"
+            number-=11;
 
         }
         if (number === 12) {
-            str+=" twelve "
-            number-=10;
+            str+=" twelve"
+            number-=12;
+
+        }
+        if (number === 13) {
+            str+=" thirteen"
+            number-=13;
+
+        }
+        if (number === 14) {
+            str+=" fourteen"
+            number-=14;
+
+        }
+        if (number === 15) {
+            str+=" fifteen"
+            number-=15;
+
+        }
+        if (number === 16) {
+            str+=" sixteen"
+            number-=16;
+
+        }
+        if (number === 17) {
+            str+=" seventeen"
+            number-=17;
+
+        }
+        if (number === 18) {
+            str+=" eghteen"
+            number-=18;
+
+        }
+        if (number === 19) {
+            str+=" nineteen"
+            number-=19;
 
         }
         if (number >= 20 && number < 30) {
