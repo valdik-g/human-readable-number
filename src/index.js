@@ -1,7 +1,7 @@
 module.exports = function toReadable (number) {
     let str ="";
-    if number == 0;
-    return "zero";
+    if(number == 0)
+        return "zero";
     if(number >= 100 && number<=999) {
         if (number >= 100 && number < 200) {
             str+="one hundred"
