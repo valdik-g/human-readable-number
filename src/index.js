@@ -143,7 +143,7 @@ module.exports = function toReadable (number) {
                 str+=" thirty"
             else
                 str+="thirty"
-            number-=9;
+            number-=30;
 
         }
         if (number >= 40 && number < 50) {

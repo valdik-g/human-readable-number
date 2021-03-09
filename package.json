@@ -23,7 +23,9 @@
   "dependencies": {
     "chai": "^4.2.0",
     "colors": "^1.4.0",
+    "lodash": "^4.17.21",
     "mocha": "^6.2.2",
-    "semver": "^6.3.0"
+    "semver": "^6.3.0",
+    "test.js": "^1.0.0"
   }
 }
