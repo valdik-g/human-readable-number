@@ -50,144 +50,229 @@ module.exports = function toReadable (number) {
         }
     }
     if(number >= 10 && number<=99) {
-        if (number === 10) {
-            str+=" ten"
+        if (number >= 10 && number < 11) {
+            if(str.length != 0)
+                str+=" ten"
+            else
+                str+="ten"
             number-=10;
 
         }
         if (number === 11) {
-            str+=" eleven"
+            if(str.length != 0)
+                str+=" eleven"
+            else
+                str+="eleven"
             number-=11;
 
         }
         if (number === 12) {
-            str+=" twelve"
+            if(str.length != 0)
+                str+=" twelve"
+            else
+                str+="twelve"
             number-=12;
 
         }
         if (number === 13) {
-            str+=" thirteen"
+            if(str.length != 0)
+                str+=" thirteen"
+            else
+                str+="thirteen"
             number-=13;
 
         }
         if (number === 14) {
-            str+=" fourteen"
+            if(str.length != 0)
+                str+=" fourteen"
+            else
+                str+="fourteen"
             number-=14;
 
         }
         if (number === 15) {
-            str+=" fifteen"
+            if(str.length != 0)
+                str+=" fifteen"
+            else
+                str+="fifteen"
             number-=15;
 
         }
         if (number === 16) {
-            str+=" sixteen"
+            if(str.length != 0)
+                str+=" sixteen"
+            else
+                str+="sixteen"
             number-=16;
 
         }
         if (number === 17) {
-            str+=" seventeen"
+            if(str.length != 0)
+                str+=" seventeen"
+            else
+                str+="seventeen"
             number-=17;
 
         }
         if (number === 18) {
-            str+=" eighteen"
+            if(str.length != 0)
+                str+=" eighteen"
+            else
+                str+="eighteen"
             number-=18;
 
         }
         if (number === 19) {
-            str+=" nineteen"
+            if(str.length != 0)
+                str+=" nineteen"
+            else
+                str+="nineteen"
             number-=19;
 
         }
         if (number >= 20 && number < 30) {
-            str+=" twenty"
+            if(str.length != 0)
+                str+=" twenty"
+            else
+                str+="twenty"
             number-=20;
 
         }
         if (number >= 30 && number < 40) {
-            str+=" thirty"
-            number-=30;
+            if(str.length != 0)
+                str+=" thirty"
+            else
+                str+="thirty"
+            number-=9;
 
         }
         if (number >= 40 && number < 50) {
-            str+=" forty"
+            if(str.length != 0)
+                str+=" forty"
+            else
+                str+="forty"
             number-=40;
 
         }
         if (number >= 50 && number < 60) {
-            str+=" fifty"
+            if(str.length != 0)
+                str+=" fifty"
+            else
+                str+="fifty"
             number-=50;
 
         }
         if (number >= 60 && number < 70) {
-            str+=" sixty"
+            if(str.length != 0)
+                str+=" sixty"
+            else
+                str+="sixty"
             number-=60;
 
         }
         if (number >= 70 && number < 80) {
-            str+=" seventy"
+            if(str.length != 0)
+                str+=" seventy"
+            else
+                str+="seventy"
             number-=70;
 
         }
         if (number >= 80 && number < 90) {
-            str+=" eighty"
+            if(str.length != 0)
+                str+=" eighty"
+            else
+                str+="eighty"
             number-=80;
 
         }
         if (number >= 90) {
-            str+=" ninety"
+            if(str.length != 0)
+                str+=" ninety"
+            else
+                str+="ninety"
             number-=90;
 
         }
     }
     if(number > 0 && number<=9) {
         if (number >= 1 && number < 2) {
-            str+=" one"
+            if(str.length != 0)
+                str+=" one"
+            else
+                str+="one"
             number-=1;
 
         }
         if (number >= 2 && number < 3) {
-            str+=" two"
+            if(str.length != 0)
+                str+=" two"
+            else
+                str+="two"
             number-=2;
 
         }
         if (number >= 3 && number < 4) {
-            str+=" three"
+            if(str.length != 0)
+                str+=" three"
+            else
+                str+="three"
             number-=3;
 
         }
         if (number >= 4 && number < 5) {
-            str+=" four"
+            if(str.length != 0)
+                str+=" four"
+            else
+                str+="four"
+
             number-=4;
 
         }
         if (number >= 5 && number < 6) {
-            str+=" five"
+            if(str.length != 0)
+                str+=" five"
+            else
+                str+="five"
+
             number-=5;
 
         }
         if (number >= 6 && number < 7) {
-            str+=" six"
+            if(str.length != 0)
+                str+=" six"
+            else
+                str+="six"
+
             number-=6;
 
         }
         if (number >= 7 && number < 8) {
-            str+=" seven"
+            if(str.length != 0)
+                str+=" seven"
+            else
+                str+="seven"
+
             number-=7;
 
         }
         if (number >= 8 && number < 9) {
-            str+=" eight"
+            if(str.length != 0)
+                str+=" eight"
+            else
+                str+="eight"
+
             number-=8;
 
         }
         if (number == 9) {
-            if(str[0] != 0)
+            if(str.length != 0)
                 str+=" nine"
             else
                 str+="nine"
+            number-=9;
         }
     }
+
     return str;
 }
