@@ -50,7 +50,7 @@ module.exports = function toReadable (number) {
         }
     }
     if(number >= 10 && number<=99) {
-        if (number >= 10 && number < 11) {
+        if (number === 10) {
             str+=" ten"
             number-=10;
 
