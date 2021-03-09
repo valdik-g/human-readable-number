@@ -91,7 +91,7 @@ module.exports = function toReadable (number) {
 
         }
         if (number === 18) {
-            str+=" eghteen"
+            str+=" eighteen"
             number-=18;
 
         }
@@ -121,7 +121,7 @@ module.exports = function toReadable (number) {
 
         }
         if (number >= 60 && number < 70) {
-            str+=" sixsty"
+            str+=" sixty"
             number-=60;
 
         }
@@ -141,50 +141,50 @@ module.exports = function toReadable (number) {
 
         }
     }
-    if(number >= 0 && number<=9) {
+    if(number > 0 && number<=9) {
         if (number >= 1 && number < 2) {
             str+=" one"
-            number-=10;
+            number-=1;
 
         }
         if (number >= 2 && number < 3) {
             str+=" two"
-            number-=10;
+            number-=2;
 
         }
         if (number >= 3 && number < 4) {
             str+=" three"
-            number-=30;
+            number-=3;
 
         }
         if (number >= 4 && number < 5) {
             str+=" four"
-            number-=40;
+            number-=4;
 
         }
         if (number >= 5 && number < 6) {
             str+=" five"
-            number-=50;
+            number-=5;
 
         }
         if (number >= 6 && number < 7) {
             str+=" six"
-            number-=60;
+            number-=6;
 
         }
         if (number >= 7 && number < 8) {
             str+=" seven"
-            number-=70;
+            number-=7;
 
         }
         if (number >= 8 && number < 9) {
             str+=" eight"
-            number-=80;
+            number-=8;
 
         }
-        if (number >= 9) {
+        if (number == 9) {
             str+=" nine"
-            number-=90;
+            number-=9;
 
         }
     }
