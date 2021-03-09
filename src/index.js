@@ -183,9 +183,10 @@ module.exports = function toReadable (number) {
 
         }
         if (number == 9) {
-            str+=" nine"
-            number-=9;
-
+            if(str[0] != 0)
+                str+=" nine"
+            else
+                str+="nine"
         }
     }
     return str;
